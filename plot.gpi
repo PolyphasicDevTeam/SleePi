@@ -1,0 +1,8 @@
+#! /usr/bin/gnuplot
+
+#set term png
+#set output "plot.png"
+set yrange [0:1024]
+plot "< tail -1024 out.dat" using :1 with lines, '< tail -1024 out.dat' using :2 with lines
+pause 0.01
+reread

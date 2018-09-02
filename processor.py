@@ -34,7 +34,7 @@ t1 = threading.Thread(target = qtSlave, args = ())
 t1.start()
 
 openeeg.eeg_init();
-fout = open('data/{}.dat'.format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")),'w');
+fout = open('data/{}.dat'.format(datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")),'w');
 freq = 2
 while True:
     update = 0

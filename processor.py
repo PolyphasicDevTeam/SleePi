@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3.6
 import datetime
 import openeeg
 import pyqtgraph as pg
